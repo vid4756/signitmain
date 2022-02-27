@@ -1,5 +1,5 @@
 {% extends "layout.html" %}
-{% block content %}
+{% block content %}<main role="main" class="container">
     <div class="content-section">
         <form method="POST" action="">
             {{ form.hidden_tag() }}
@@ -68,5 +68,5 @@
         <small class="text-muted">
             Already Have An Account? <a class="ml-2" href="{{ url_for('users.login') }}">Sign In</a>
         </small>
-    </div>
+    </div></main>
 {% endblock content %}

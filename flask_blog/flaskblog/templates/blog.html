@@ -6,7 +6,7 @@
     {% if current_user.is_authenticated %}
 <div class="col-md-4" >
   <div class="content-section">
-    <h3>Forum</h3>
+    <h3>blog</h3>
     
       <ul class="list-group">
         <li class="list-group-item list-group-item-light"><a class="nav-item nav-link" href="{{ url_for('posts.new_post') }}"> Create New Post</a></li>
@@ -34,9 +34,9 @@
     {% for page_num in posts.iter_pages(left_edge=1, right_edge=1, left_current=1, right_current=2) %}
       {% if page_num %}
         {% if posts.page == page_num %}
-          <a class="btn colored-section mb-4" href="{{ url_for('main.forum', page=page_num) }}">{{ page_num }}</a>
+          <a class="btn colored-section mb-4" href="{{ url_for('main.blog', page=page_num) }}">{{ page_num }}</a>
         {% else %}
-          <a class="btn signit mb-4" href="{{ url_for('main.forum', page=page_num) }}">{{ page_num }}</a>
+          <a class="btn signit mb-4" href="{{ url_for('main.blog', page=page_num) }}">{{ page_num }}</a>
         {% endif %}
       {% else %}
         ...
