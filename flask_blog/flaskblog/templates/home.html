@@ -6,10 +6,11 @@
                 <div class="col-lg-8 feature-desc">
                     
                     
-                    <h3 class="title-icon">SignIt</h3>
-                    <p class="para-icon">Signitis a website that is created for bridging the gap between hearing and non-hearing community not everyone knows how to interpret sign language while having a conversation with non-hearing community. Not everyone knows about problems faced by non-hearing peoples .This platform solve all of the above problems.</p>
+                    
+                    <p id="p1">Signitis a website that is created for bridging the gap between hearing and non-hearing community not everyone knows how to interpret sign language while having a conversation with non-hearing community. Not everyone knows about problems faced by non-hearing peoples .This platform solve all of the above problems.</p>
                 </div>
                 <div class="col-lg-4 feature-desc">
+                    <!-- <image src="{{url_for('static',filename = 'images/download.jpg')}}" ></image> -->
                     <img src="/static/assets/sign.png" alt="iphone-mockup" class="title-image">
                 </div>
                 
@@ -38,40 +39,7 @@
             </div>
         </div>
     </section>
-<section id="features" class="colored-section">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-8 feature-desc">
-                    <h1>Interpreter</h1>
-                    <img src="/static/assets/sign.png" alt="iphone-mockup" class="title-image">
-                    
-                </div>
-                <div class="col-lg-4 feature-desc">
-                    
-                    <h3 class="title-icon">Elite Clientele</h3>
-                    <p class="para-icon">We have all the dogs, the greatest dogs.We have all the dogs, the greatest dogs.We have all the dogs, the greatest dogs.</p>
-                    <a class="btn white-section" href="#">start</a>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-<section id="features" class="white-section">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-4 feature-desc">
-                    <h1>blog</h1>
-                    
-                    
-                    <p class="para-icon">So easy to use, even your dog could do it.</p>
-                </div>
-                <div class="col-lg-8 feature-desc">
-                    <img src="/static/assets/sign.png" alt="iphone-mockup" class="title-image">
-                </div>
-                
-            </div>
-        </div>
-    </section>
+
 <section id="features" class="colored-section">
         <div class="container-fluid">
             <div class="row">
@@ -81,11 +49,16 @@
                     
                     <a class="btn white-section" href="#">click here to start bonus section</a>
                 </div>
+                {% for img in imgrand %}
+                <img src="{{img}}" alt="{{imgL}}" style="width:100%">
+                {% endfor %}
                
                 
             </div>
         </div>
     </section>
+
+
 
 <footer class="white-section">
             

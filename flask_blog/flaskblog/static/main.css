@@ -1,7 +1,7 @@
 body {
     background: #fafafa;
     color: #333333;
-    margin-top: 3rem;
+    margin-top: 5rem;
     font-family: 'Montserrat';
     
   }
@@ -141,6 +141,10 @@ a{color:#8267BE;}
   margin-top: 70px;
   margin-bottom: 3%;
   text-align: center;
+}
+.p1 {
+  
+  text-align: left;
 }
 
 .icon {
