@@ -1,8 +1,5 @@
 from flask import render_template, request, Blueprint,url_for
 from flaskblog.models import Post
-# from flaskblog.main.random_img import ri
-import os
-import random
 
 main = Blueprint('main', __name__)
 @main.route("/blog")
@@ -14,15 +11,11 @@ def blog():
 @main.route("/home")
 def home():
     return render_template('home.html',title='home')
+@main.route("/interpreter")
+def interpreter():
+    return render_template('interpreter.html',title='interpreter')
 
 
-# imgs = os.listdir('static/img')
-# imgs = ['img/' + file for file in imgs]
-# @main.route('/index')
-# def index(imgrand = random.sample(imgs,k=5)):
-   
-    
-#     return render_template('home.html', imgrand=imgrand)
 
 
 
@@ -39,9 +32,7 @@ def home():
 # def bonus():
     
 #     return render_template('bonus.html',title='bonus')
-# @main.route("/interpreter")
-# def interpreter():
-#     return render_template('interpreter.html',title='interpreter')
+
 # @main.route("/")
 # def index():
 #  random_bird = BirdDetails.query.order_by(func.random()).first()
