@@ -27,17 +27,17 @@
     <header class="site-header">
       <nav class="navbar navbar-expand-md navbar-dark colored-section fixed-top">
         <div class="container">
-          <a class="navbar-brand mr-4" href="/">Signit</a>
+          <a class="navbar-brand mr-4" href="/"><image class="steel" src="{{url_for('static',filename = 'assets/logo.png')}}" alt="sry" class="title-image" height="50px" width="70px"></image>Signit</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarToggle">
             <div class="navbar-nav mr-auto">
               <a class="nav-item nav-link" href="{{ url_for('main.home') }}">Home</a>
-              <a class="nav-item nav-link" href="{{ url_for('main.blog') }}">blog</a>
-              <a class="nav-item nav-link" >Interpreter</a>
-              <a class="nav-item nav-link" >bonus</a>
-              <a class="nav-item nav-link" >contact us</a>
+              <a class="nav-item nav-link" href="{{ url_for('main.blog') }}">Blog</a>
+              <a class="nav-item nav-link" href="{{ url_for('main.interpreter') }}">Interpreter</a>
+              
+              
             </div>
             <!-- Navbar Right Side -->
             <div class="navbar-nav">
@@ -74,6 +74,8 @@
             <footer class="white-section">
             
               <center><p>© Copyright by Signit</p></center> 
+              <center><a href="#">signit@gmail.com</a>|| <a href="#">privacy policy</a></center> 
+              
        
            </footer>
        

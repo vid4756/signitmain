@@ -1,5 +1,8 @@
 {% extends "layout.html"%}
 {% block content%}
+<section id="features" class="white-section">
+    <div class="container-fluid">
+        <div class="row">
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -8,13 +11,19 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="d-block w-100" src="..." alt="First slide">
+        <img class="d-block w-100" src="{{url_for('static',filename = 'assets/1.png')}}" alt="First slide">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="..." alt="Second slide">
+        <img class="d-block w-100" src="{{url_for('static',filename = 'assets/2.png')}}" alt="Second slide">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="..." alt="Third slide">
+        <img class="d-block w-100" src="{{url_for('static',filename = 'assets/3.png')}}" alt="Third slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="{{url_for('static',filename = 'assets/4.png')}}" alt="Third slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="{{url_for('static',filename = 'assets/5.png')}}" alt="Third slide">
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -26,6 +35,9 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
+</div>
+</div>
+</section>
 
 <section id="features" class="colored-section">
         <div class="container-fluid">
@@ -37,8 +49,8 @@
                     <p id="p1">Signitis a website that is created for bridging the gap between hearing and non-hearing community not everyone knows how to interpret sign language while having a conversation with non-hearing community. Not everyone knows about problems faced by non-hearing peoples .This platform solve all of the above problems.</p>
                 </div>
                 <div class="col-lg-4 feature-desc">
-                    <!-- <image src="{{url_for('static',filename = 'images/download.jpg')}}" ></image> -->
-                    <img src="/static/assets/sign.png" alt="iphone-mockup" class="title-image">
+                    <image src="{{url_for('static',filename = 'assets/sign.png')}}" alt="sry" class="title-image"></image>
+                    
                 </div>
                 
             </div>
@@ -48,39 +60,22 @@
 <section id="features" class="white-section">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-4 feature-desc">
+                <div class="col-lg-6 feature-desc">
                     <i class="fas fa-check-circle icon"></i>
-                    <h3 class="title-icon"><a href="#">Interpreter</a></h3>
+                    <h3 class="title-icon"><a href="{{ url_for('main.interpreter') }}">Interpreter</a></h3>
                     
                 </div>
-                <div class="col-lg-4 feature-desc">
+                <div class="col-lg-6 feature-desc">
                     <i class="fas fa-bullseye icon"></i>
-                    <h3 class="title-icon"><a href="#">blog</a></h3>
+                    <h3 class="title-icon"><a href="{{ url_for('main.blog') }}">blog</a></h3>
                     
                 </div>
-                <div class="col-lg-4 feature-desc">
-                    <i class="fas fa-heart icon"></i>
-                    <h3 class="title-icon"><a href="#">bonus</a></h3>
-                    
-                </div>
+               
             </div>
         </div>
     </section>
 
-<section id="features" class="colored-section">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col feature-desc">
-                    <h1>bonus</h1>
-                    <p class="para-icon">So easy to use, even your dog could do it.</p>
-                    
-                    <a class="btn white-section" href="#">click here to start bonus section</a>
-                </div>
 
-                
-            </div>
-        </div>
-    </section>
 
 
 
