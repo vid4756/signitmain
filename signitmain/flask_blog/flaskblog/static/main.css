@@ -30,11 +30,18 @@ body {
   legend{text-align:center;}
   
   .content-section {
-    background: #ffffff;
-    padding: 20px 20px;
-    border: 1px solid #dddddd;
+    
+    
+    border: 2px solid #dddddd;
     border-radius: 20px;
     margin-bottom: 20px;
+    display: flex;
+    
+   
+    
+   
+    padding: 20px;
+  }
     
   }
   
@@ -179,3 +186,6 @@ i:hover {
 .container-fluid {
   padding: 7% 15%;
 }
+
+ 
+
