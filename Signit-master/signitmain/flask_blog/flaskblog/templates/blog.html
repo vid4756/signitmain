@@ -7,7 +7,7 @@
     
     {% if current_user.is_authenticated %}
 <div class="col-md-4" >
-  <div class="content-section">
+ 
     <h3>blog</h3>
     
       <ul class="list-group">
@@ -18,13 +18,21 @@
       </ul>
     </p>
   </div></div>{% endif %}
-  <div id="login">
-    <h3 class="text-center text-white pt-5">create a new blog</h3>
+  
+
+
+  
+   
+  <div class="col-md-8">
+    {% if not current_user.is_authenticated %}
+  
+  <div id="new">
+    <h3 class="text-center text-black pt-5">create a new blog</h3>
     <div class="container">
-        <div id="login-row" class="row justify-content-center align-items-center">
-            <div id="login-column" class="col-md-6">
-                <div id="login-box" class="col-md-12">
-                    <form id="login-form" class="form" action="" method="post">
+        <div id="new-row" class="row justify-content-center align-items-center">
+            <div id="new-column" class="col-md-6">
+                <div id="new-box" class="col-md-12">
+                    <form id="new-form" class="form" action="" method="post">
                         
                         <div class="form-group">
                             
@@ -35,8 +43,8 @@
                             <input type="text" name="password" id="password" class="form-control">
                         </div>
                         
-                        <div id="register-link" class="text-right">
-                            <a href="#" class="text colored-section">Post</a>
+                        <div id="new-link" class="text-center">
+                            <a href="{{ url_for('users.login') }}" class="text btn1 signit">Post</a>
                         </div>
                     </form>
                 </div>
@@ -44,15 +52,10 @@
         </div>
     </div>
 </div>
- 
-
-
-  
-   
-  <div class="col-md-8">
+ {%endif%}
     
-    {% for post in posts.items %}
-        <article class="media content-section">
+    {% for post in posts.items %}<div class="a1">
+        <article class="media content-section1">
           <img class="rounded-circle article-img" src="{{ url_for('static', filename='profile_pics/' + post.author.image_file) }}">
           <div class="media-body">
             <div class="article-metadata">

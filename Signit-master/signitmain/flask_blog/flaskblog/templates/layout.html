@@ -34,9 +34,9 @@
           <div class="collapse navbar-collapse" id="navbarToggle">
             <div class="navbar-nav mr-auto">
               <a class="nav-item nav-link" href="{{ url_for('main.home') }}">Home</a>
-              <a class="nav-item nav-link" href="{{ url_for('main.blog') }}">Blog</a>
-              <a class="nav-item nav-link" href="#interpreter">Interpreter</a>
-              <a class="nav-item nav-link" href="#about">About us</a>
+              <a class="nav-item nav-link" href="{{ url_for('main.interpreter') }}">Interpreter</a>
+              <a class="nav-item nav-link" href="{{ url_for('main.blog') }}">blog</a>
+             
               
               
             </div>
@@ -57,14 +57,15 @@
     </header>
    
           
-            <div class="row">
+            <div class="row ">
               <div class="col ">
                 {% with messages = get_flashed_messages(with_categories=true) %}
                   {% if messages %}
-                    {% for category, message in messages %}
-                      <div class="alert alert-{{ category }} col-lg-4 ">
+                    {% for category, message in messages %}<div class="a1">
+                     <center> <div class="alert alert-{{ category }} col-lg-4  ">
+                        
                         {{ message }}
-                      </div>
+                      </div></center></div>
                     {% endfor %}
                   {% endif %}
                 {% endwith %}

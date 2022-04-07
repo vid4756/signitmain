@@ -21,7 +21,7 @@ mail = Mail()
 from flask_admin import Admin
 
 from flask_admin.contrib.sqla import ModelView
-admin = Admin( name='microblog', template_mode='bootstrap3')
+admin = Admin( name='adminusers', template_mode='bootstrap3')
 from flaskblog.models import *
 admin.add_view(ModelView(Post,db.session))
 admin.add_view(ModelView(User,db.session))
@@ -48,4 +48,5 @@ def create_app(config_class=Config):
     app.register_blueprint(posts)
     app.register_blueprint(main)
     app.register_blueprint(errors)
+    
     return app

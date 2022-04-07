@@ -40,7 +40,17 @@ body {
   
   .content-section {
     
+    max-width: 400px;
+    border: 2px solid #dddddd;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    padding: 20px;
+  }
     
+  .content-section1 {
+    
+    max-width: 800px;
     border: 2px solid #dddddd;
     border-radius: 20px;
     margin-bottom: 20px;
@@ -242,7 +252,7 @@ i:hover {
   margin-top: 120px;
   max-width: 800px;
   /* width: 800px; */
-  height: 600px;
+  height: 700px;
   border: 2px solid #8267BE;
   background-color: #FFF;
   
@@ -253,7 +263,22 @@ i:hover {
 #account .container #account-row #account-column #account-box #account-form #account-link {
   margin-top: -85px;
 }
- 
+
+ #new .container #new-row #new-column #new-box {
+  margin-top: 10px;
+  max-width: 600px;
+  height: 200px;
+  border: 2px solid #8267BE;
+  background-color: #FFF;
+  
+}
+#new .container #new-row #new-column #new-box #new-form {
+  padding: 20px;
+}
+
 
 .big-heading{font-size: 60px;}
 .down{padding-top: 300px;}
+
+.a1{
+padding-top: 50px;}
